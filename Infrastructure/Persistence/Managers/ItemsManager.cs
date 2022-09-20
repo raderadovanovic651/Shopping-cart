@@ -18,11 +18,6 @@ namespace Infrastructure.Persistence.Managers
             _shoppingCartUow = shoppingCartUow;
         }
 
-        public List<Item> GetAllItems()
-        {
-            return _shoppingCartUow.ItemsRepository.GetAllItems();
-        }
-
         public Item GetItemById(int id)
         {
             return _shoppingCartUow.ItemsRepository.GetItemById(id);
@@ -38,11 +33,6 @@ namespace Infrastructure.Persistence.Managers
             }
             else 
                 return result;
-        }
-        public async Task<bool> DeleteItem(Item item)
-        {
-            var result = _shoppingCartUow.ItemsRepository.DeleteItem(item);
-            return await _shoppingCartUow.SaveChanges();
         }
     }
 }

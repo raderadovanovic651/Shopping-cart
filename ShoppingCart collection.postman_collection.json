@@ -1,0 +1,160 @@
+{
+	"info": {
+		"_postman_id": "d1ff4281-e5f9-44b4-9309-45e6b9b51039",
+		"name": "ShoppingCart collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14720256"
+	},
+	"item": [
+		{
+			"name": "Dodavanje itema u korpu",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"itemId\": 4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7037/api/Cart/insert-cart-item",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7037",
+					"path": [
+						"api",
+						"Cart",
+						"insert-cart-item"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Brisanje itema iz korpe",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"itemId\": 2\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7037/api/Cart/delete-cart-item",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7037",
+					"path": [
+						"api",
+						"Cart",
+						"delete-cart-item"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Racunanje cene ubacenih itema",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7037/api/Cart/get-cart-price-without-discont",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7037",
+					"path": [
+						"api",
+						"Cart",
+						"get-cart-price-without-discont"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Racunanje cene ako ima popust",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7037/api/Cart/get-cart-price-with-discont",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7037",
+					"path": [
+						"api",
+						"Cart",
+						"get-cart-price-with-discont"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obracunavanje popusta na odredjeni item",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7037/api/Item/get-item-discount?itemId=2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7037",
+					"path": [
+						"api",
+						"Item",
+						"get-item-discount"
+					],
+					"query": [
+						{
+							"key": "itemId",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Potvrda porudzbine i povratna informacija",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7037/api/Cart/order",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7037",
+					"path": [
+						"api",
+						"Cart",
+						"order"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -9,9 +9,7 @@ namespace Infrastructure.Persistence.Repositories.Interfaces
 {
     public interface IItemsRepository
     {
-        List<Item> GetAllItems();
         Item GetItemById(int id);
         Item SaveItem(Item item);
-        bool DeleteItem(Item item);
     }
 }

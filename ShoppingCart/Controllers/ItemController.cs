@@ -18,7 +18,7 @@ namespace ShoppingCart.Controllers
 
         [HttpGet]
         [Route("get-item-discount")]
-        public async Task<ActionResult<double>> GetItemDiscount([FromHeader] int itemId)
+        public async Task<ActionResult<double>> GetItemDiscount([FromQuery] int itemId)
         {
             return await Mediator.Send(new GetItemDiscountQuery { ItemId = itemId });
         }

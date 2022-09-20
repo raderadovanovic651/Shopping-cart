@@ -9,9 +9,7 @@ namespace Application.Persistence.Managers
 {
     public interface IItemsManager
     {
-        List<Item> GetAllItems();
         Item GetItemById(int id);
         Task<Item> SaveItem(Item item);
-        Task<bool> DeleteItem(Item item);
     }
 }

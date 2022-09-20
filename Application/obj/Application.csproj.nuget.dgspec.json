@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Branislav Mikic\\Source\\Repos\\Shopping-cart-\\Application\\Application.csproj": {}
+    "C:\\Users\\rader\\source\\repos\\ShoppingCart\\Application\\Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Branislav Mikic\\Source\\Repos\\Shopping-cart-\\Application\\Application.csproj": {
+    "C:\\Users\\rader\\source\\repos\\ShoppingCart\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Branislav Mikic\\Source\\Repos\\Shopping-cart-\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\rader\\source\\repos\\ShoppingCart\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\Branislav Mikic\\Source\\Repos\\Shopping-cart-\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\Branislav Mikic\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Branislav Mikic\\Source\\Repos\\Shopping-cart-\\Application\\obj\\",
+        "projectPath": "C:\\Users\\rader\\source\\repos\\ShoppingCart\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\rader\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rader\\source\\repos\\ShoppingCart\\Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Branislav Mikic\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\rader\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,14 +26,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Branislav Mikic\\Source\\Repos\\Shopping-cart-\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Branislav Mikic\\Source\\Repos\\Shopping-cart-\\Domain\\Domain.csproj"
+              "C:\\Users\\rader\\source\\repos\\ShoppingCart\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\rader\\source\\repos\\ShoppingCart\\Domain\\Domain.csproj"
               }
             }
           }
@@ -71,7 +76,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -80,21 +86,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Branislav Mikic\\Source\\Repos\\Shopping-cart-\\Domain\\Domain.csproj": {
+    "C:\\Users\\rader\\source\\repos\\ShoppingCart\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Branislav Mikic\\Source\\Repos\\Shopping-cart-\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\rader\\source\\repos\\ShoppingCart\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Branislav Mikic\\Source\\Repos\\Shopping-cart-\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\Branislav Mikic\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Branislav Mikic\\Source\\Repos\\Shopping-cart-\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\rader\\source\\repos\\ShoppingCart\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\rader\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rader\\source\\repos\\ShoppingCart\\Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Branislav Mikic\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\rader\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -102,6 +112,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -125,7 +136,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -134,7 +146,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

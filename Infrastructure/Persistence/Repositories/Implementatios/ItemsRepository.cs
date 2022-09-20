@@ -16,10 +16,6 @@ namespace Infrastructure.Persistence.Repositories.Implementatios
         {
             _dbContext = dbContext;
         }
-        public List<Item> GetAllItems()
-        {
-            return _dbContext.Items.ToList();
-        }
 
         public Item GetItemById(int id)
         {
@@ -31,10 +27,5 @@ namespace Infrastructure.Persistence.Repositories.Implementatios
             _dbContext.Items.Add(item);
             return item;
         }
-        public bool DeleteItem(Item item)
-        {
-            throw new NotImplementedException();
-        }
-
     }
 }
