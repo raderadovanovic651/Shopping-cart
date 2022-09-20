@@ -18,7 +18,7 @@ namespace Infrastructure.Persistence.Managers
             _shoppingCartUow = shoppingCartUow;
         }
 
-        public Task<List<Item>> GetAllItems()
+        public List<Item> GetAllItems()
         {
             return _shoppingCartUow.ItemsRepository.GetAllItems();
         }

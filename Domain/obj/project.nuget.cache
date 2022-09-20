@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gK0FmUI673ZX3rnnulRZQdLLGCb0ia3bz4UvXbJtO8whstKslPM7QuGdyeFe5+veEYfIzf3D72aMfnkN7fJiuA==",
+  "dgSpecHash": "LSXaxSrYVJI4mqNZTwHuiVe5gTLp2O4yQ504jxEqJikD90zsm+5HIKJQgpTgzXnAHW/a5ji3rhHEPOvkjX5m+g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rader\\source\\repos\\ShoppingCart\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Users\\Branislav Mikic\\Source\\Repos\\Shopping-cart-\\Domain\\Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

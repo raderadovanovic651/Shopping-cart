@@ -16,14 +16,14 @@ namespace Infrastructure.Persistence.Repositories.Implementatios
         {
             _dbContext = dbContext;
         }
-        public Task<List<Item>> GetAllItems()
+        public List<Item> GetAllItems()
         {
-            throw new NotImplementedException();
+            return _dbContext.Items.ToList();
         }
 
         public Item GetItemById(int id)
         {
-            throw new NotImplementedException();
+            return _dbContext.Items.Where(x => x.Id == id).FirstOrDefault();
         }
 
         public Item SaveItem(Item item)

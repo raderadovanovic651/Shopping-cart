@@ -1,4 +1,6 @@
-﻿using Application.Commands.Item;
+﻿using Application.Commands.Cart;
+using Application.Commands.Item;
+using Application.Responses.Cart;
 using Application.Responses.Item;
 using AutoMapper;
 using Domain.Models;
@@ -16,6 +18,9 @@ namespace Application.Mapping
         {
             CreateMap<ItemInsertCommand, Item>().ReverseMap();
             CreateMap<Item, ItemResponse>().ReverseMap();
+            CreateMap<CartInsertCommand, Cart>().ReverseMap();
+            CreateMap<Cart, CartResponse>().ReverseMap();
+            CreateMap<Cart, CartOrderQueryResponse>().ReverseMap();
         }
     }
 }

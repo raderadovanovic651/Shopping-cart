@@ -25,8 +25,13 @@ namespace Application.RequestHandlers.Item
         public async Task<ItemResponse> Handle(ItemInsertCommand command, CancellationToken cancellationToken)
         {
             var item = _mapper.Map<Domain.Models.Item>(command);
-            var res = await _itemsManager.SaveItem(item);
-            return _mapper.Map<ItemResponse>(res);
+            if (item.Price > item.Discount)
+            {
+                var res = await _itemsManager.SaveItem(item);
+                return _mapper.Map<ItemResponse>(res);
+            }
+            else
+                throw new Exception("Discount cannot be greater then price!");
         }
     }
 }

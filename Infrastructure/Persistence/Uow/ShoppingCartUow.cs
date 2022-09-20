@@ -19,7 +19,7 @@ namespace Infrastructure.Persistence.Uow
         }
 
         public IItemsRepository ItemsRepository => new ItemsRepository(_dbContext);
-
+        public ICartRepository CartRepository => new CartRepository(_dbContext);
         public async Task<bool> SaveChanges()
         {
             return await _dbContext.SaveChangesAsync() > 0; 

@@ -10,6 +10,7 @@ namespace Infrastructure.Persistence.Uow
     public interface IShoppingCartUow
     {
         IItemsRepository ItemsRepository { get; }
+        ICartRepository CartRepository { get; }
         Task<bool> SaveChanges();
     }
 }
